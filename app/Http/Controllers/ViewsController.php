@@ -30,7 +30,8 @@ class ViewsController extends Controller
     public function tourismDetail($index){
         $detail = new DetailController();
         $data['list'] = $detail->getTourism($index);
-        return view('tourism', $data);
+        $data['type'] = "TOURISM";
+        return view('detailview', $data);
     }
 
 
@@ -41,6 +42,13 @@ class ViewsController extends Controller
         return view('listview', $data);
     }
 
+    public function culinaryDetail($index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getCulinary($index);
+        $data['type'] = "CULINARY";
+        return view('detailview', $data);
+    }
+
     public function souvenir(){
         $dashboard = new DashboardController();
         $data['list'] = $dashboard->getSouvenir();
@@ -48,10 +56,24 @@ class ViewsController extends Controller
         return view('listview', $data);
     }
 
+    public function souvenirDetail($index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getSouvenir($index);
+        $data['type'] = "SOUVENIR";
+        return view('detailview', $data);
+    }
+
     public function lodging(){
         $dashboard = new DashboardController();
         $data['list'] = $dashboard->getLodging();
         $data['type'] = "LODGING";
         return view('listview', $data);
+    }
+
+    public function lodgingDetail($index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getLodging($index);
+        $data['type'] = "LODGING";
+        return view('detailview', $data);
     }
 }

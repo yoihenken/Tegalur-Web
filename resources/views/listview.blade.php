@@ -24,14 +24,14 @@
 
                     <hr class="divider my-4" />
 
-                    @forelse ($list as $item)
-                    <a href="">
-                        <img src="">
-                        {{ $item['title'] }}
-                    </a>
-                    <br>
+                    @forelse ($list as $index=>$item)
+                        <a href="/{{strtolower($type)}}/{{$index}}">
+                            <img src="">
+                            {{ $item['title'] }}
+                        </a>
+                        <br>
                     @empty
-                    <h4>Data not found</h4>
+                        <h4>Data not found</h4>
                     @endforelse
                 </div>
             </div>
