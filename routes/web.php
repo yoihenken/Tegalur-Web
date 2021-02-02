@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'ViewsController@dashboard')->name('dashboard');
+Route::get('/tourism', 'ViewsController@tourism')->name('tourism');

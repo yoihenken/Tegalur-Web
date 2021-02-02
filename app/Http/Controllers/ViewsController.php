@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\DashboardController;
 
 class ViewsController extends Controller
 {
@@ -19,7 +20,9 @@ class ViewsController extends Controller
     }
 
     public function tourism(){
-        return view('tourism');
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getTourism();
+        return view('tourism', $data);
     }
 
     public function culinary(){
