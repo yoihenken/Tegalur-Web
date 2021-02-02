@@ -18,4 +18,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get("/callapi", "DashboardController@callAPI");
+Route::get("/news/{index}", "DashboardController@getNewsPage");
+Route::get("/event/{index}", "DashboardController@getEventPage");
+Route::get("/tourism", "DashboardController@getTourism");
+Route::get("/culinary", "DashboardController@getCulinary");
+Route::get("/souvenir", "DashboardController@getSouvenir");
+Route::get("/lodging", "DashboardController@getLodging");
