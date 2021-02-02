@@ -19,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ViewsController@dashboard')->name('dashboard');
 Route::get('/tourism', 'ViewsController@tourism')->name('tourism');
+// Route::get('/tourism/{index}', 'ViewsController@tourismDetail')->name('tourism');
+Route::get('/culinary/', 'ViewsController@culinary')->name('culinary');
+Route::get('/souvenir/', 'ViewsController@souvenir')->name('souvenir');
+Route::get('/lodging/', 'ViewsController@lodging')->name('lodging');
+

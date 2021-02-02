@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="./Event.html">
+                    <a class="portfolio-box" href="">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/event2.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Event</div>
@@ -29,7 +29,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="">
+                    <a class="portfolio-box" href="{{route('lodging')}}">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/penginapan.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Penginapan</div>
@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="./Kuliner.html">
+                    <a class="portfolio-box" href="{{route('culinary')}}">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/kuliner.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Kuliner</div>
@@ -45,7 +45,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="">
+                    <a class="portfolio-box" href="{{route('souvenir')}}">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/ole2.jpg') }}" alt="" />
                         <div class="portfolio-box-caption p-3">
                             <div class="project-name">Oleh Oleh</div>

@@ -27,7 +27,7 @@ class DetailController extends Controller
 
     public function getTourism ($index){
         
-        $list = $this -> callApiList("TOURISM", $index);
+        $list = $this -> callApiDetail("TOURISM", $index);
         if(sizeof($list)!= 0){
             return $list;
         }
@@ -36,7 +36,7 @@ class DetailController extends Controller
 
     public function getCulinary ($index){
         
-        $list = $this -> callApiList("CULINARY", $index);
+        $list = $this -> callApiDetail("CULINARY", $index);
         if(sizeof($list)!= 0){
             return $list;
         }
@@ -45,7 +45,7 @@ class DetailController extends Controller
 
     public function getSouvenir ($index){
         
-        $list = $this -> callApiList("SOUVENIR", $index);
+        $list = $this -> callApiDetail("SOUVENIR", $index);
         if(sizeof($list)!= 0){
             return $list;
         }
@@ -53,7 +53,7 @@ class DetailController extends Controller
     }
     public function getLodging ($index){
         
-        $list = $this -> callApiList("LODGING", $index);
+        $list = $this -> callApiDetail("LODGING", $index);
         if(sizeof($list)!= 0){
             return $list;
         }
