@@ -13,17 +13,37 @@ class ViewsController extends Controller
     }
 
     public function news(){
-        return view('news');
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getNewsPage(1);
+        $data['type'] = "NEWS";
+        $data['current'] = 1;
+        $data['last'] = $dashboard->getNewsLastPage();
+        return view('listpageview', $data);
+    }
+
+    public function newsPage($index){
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getNewsPage($index);
+        $data['type'] = "NEWS";
+        $data['current'] = $index;
+        $data['last'] = $dashboard->getNewsLastPage();
+        return view('listpageview', $data);
     }
 
     public function event(){
-        return view('event');
+        return view('listpageview');
+    }
+
+    public function eventPage(){
+        return view('listpageview');
     }
 
     public function tourism(){
         $dashboard = new DashboardController();
         $data['list'] = $dashboard->getTourism();
         $data['type'] = "TOURISM";
+        // 
+        // $data['lastev'] = $dashboard->getEventLastPage();
         return view('listview', $data);
     }
 

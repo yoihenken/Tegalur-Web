@@ -5,7 +5,7 @@
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6 portfolio-box">
-                    <a class="portfolio-box" href="">
+                    <a class="portfolio-box" href="{{route('news')}}">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/berita.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Berita</div>
@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="">
+                    <a class="portfolio-box" href="{{route('event')}}">
                         <img class="img-fluid" width="600" height="500" src="{{ asset('assets/img/portfolio/thumbnails/event2.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Event</div>
