@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Wisata Tegal</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{{ asset('/assets/img/favicon.ico') }}"/>
+        <link rel="icon" type="image/x-icon" href="{{ asset('/assets/img/logo/Logo.png') }}"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -22,7 +22,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">TegaLur</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="40%" width="40%" src="{{ asset('/assets/img/logo/Logo.png') }}" > </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -42,7 +42,7 @@
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Tegal pun punya cerita</p>
+                        <p class="text-white-75 font-weight-light mb-5">Tegal pun punya pesona !</p>
                     </div>
                 </div>
             </div>
