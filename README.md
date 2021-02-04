@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Deskripsi TegaLur Web
+TegaLur Web merupakan web yang berfungsi untuk mengetahui Informasi Wisata yang ada ditegal bagi masyarakat tegal maupun para perantauan atau pendatang. Bukan hanya Wisata, web tegalur ini memiliki konten yang ada didalamnya yaitu Berita, Pariwisata, Event, Penginapan, kuliner dan oleh-oleh, Web ini bermanfaat untuk mengetahui hal-hal menarik dan unik yang ada di kota maupun kabupaten tegal.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
