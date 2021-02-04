@@ -1,6 +1,7 @@
 @extends('template.base')
 @section('content')
     <!-- Portfolio-->
+    <div id="contact"></div>
     <div id="portfolio">
         <div class="container-fluid p-0">
             <div class="row no-gutters">

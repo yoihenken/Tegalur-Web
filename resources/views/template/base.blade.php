@@ -28,7 +28,7 @@
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('dashboard')}}">Home</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Content</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Content</a></li>
                     </ul>
                 </div>
             </div>

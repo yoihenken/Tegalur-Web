@@ -18,7 +18,7 @@
                     <hr class="divider my-4" />
 
                     @forelse ($list as $index=>$item)
-                        <a href="/{{strtolower($type)}}/{{$index}}">
+                        <a href="/{{strtolower($type)}}/{{$index}}/#contact">
                             <img src="">
                             {{ $item['title'] }}
                         </a>
@@ -33,9 +33,9 @@
                             
                             {{-- First Page --}}
                             @if ($current == 1)
-                                <li class="page-item active"><a class="page-link" href="/{{strtolower($type)}}/1">First</a></li>    
+                                <li class="page-item active"><a class="page-link" href="/{{strtolower($type)}}/1/#contact">First</a></li>    
                             @else
-                                <li class="page-item"><a class="page-link" href="/{{strtolower($type)}}/1">First</a></li>
+                                <li class="page-item"><a class="page-link" href="/{{strtolower($type)}}/1/#contact">First</a></li>
                             @endif
                             
                             {{-- Mid Page --}}
@@ -58,17 +58,17 @@
 
                             @for ($i = $currentF; $i <= $currentL; $i++)
                                 @if ($i == $current)
-                                    <li class="page-item active" aria-current="page"><a class="page-link" href="/{{strtolower($type)}}/{{$i}}">{{$i}}</a></li>        
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="/{{strtolower($type)}}/{{$i}}/#contact">{{$i}}</a></li>        
                                 @else 
-                                    <li class="page-item" aria-current="page"><a class="page-link" href="/{{strtolower($type)}}/{{$i}}">{{$i}}</a></li>
+                                    <li class="page-item" aria-current="page"><a class="page-link" href="/{{strtolower($type)}}/{{$i}}/#contact">{{$i}}</a></li>
                                 @endif
                             @endfor
                             
                             {{-- Last Page --}}
                             @if ($current == $last)
-                                <li class="page-item active"><a class="page-link" href="/{{strtolower($type)}}/{{$last}}">Last</a></li>    
+                                <li class="page-item active"><a class="page-link" href="/{{strtolower($type)}}/{{$last}}/#contact">Last</a></li>    
                             @else
-                                <li class="page-item"><a class="page-link" href="/{{strtolower($type)}}/{{$last}}">Last</a></li>    
+                                <li class="page-item"><a class="page-link" href="/{{strtolower($type)}}/{{$last}}/#contact">Last</a></li>    
                             @endif
                         </ul>
                     </nav>

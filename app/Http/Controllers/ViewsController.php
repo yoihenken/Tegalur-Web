@@ -31,11 +31,21 @@ class ViewsController extends Controller
     }
 
     public function event(){
-        return view('listpageview');
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getEventPage(1);
+        $data['type'] = "EVENT";
+        $data['current'] = 1;
+        $data['last'] = $dashboard->getEventLastPage();
+        return view('listpageview', $data);
     }
 
-    public function eventPage(){
-        return view('listpageview');
+    public function eventPage($index){
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getEventPage($index);
+        $data['type'] = "EVENT";
+        $data['current'] = $index;
+        $data['last'] = $dashboard->getEventLastPage();
+        return view('listpageview', $data);
     }
 
     public function tourism(){
