@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Belajar Tabel HTML</title>
+	<title> Kelompok 9 Web</title>
 	<meta charset="utf-8">
 </head>
 <body>
