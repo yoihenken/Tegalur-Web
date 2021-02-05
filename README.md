@@ -2,10 +2,27 @@
 
 
 
-kelompok 9 :
-Bagus Bayu Sasongko         18104003
-Rodo Joshua Saragih         18104021
-Zulfiqar Ridho Fikriansyah  18104050
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Tabel HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+ 
+ <table>
+ 	<tr>
+ 		<td> Bagus Bayu Sasongko        (18104003)</td>
+ 		<td> Rodo Joshua Saragih         (18104021)</td>
+        <td>  Zulfiqar Ridho Fikriansyah (18104050)</td>
+ 	</tr>
+ 
+ </table>
+
+</body>
+</html>
+
+
 
 ## Deskripsi TegaLur Web
 TegaLur Web merupakan web yang berfungsi untuk mengetahui Informasi Wisata yang ada ditegal bagi masyarakat tegal maupun para perantauan atau pendatang. Bukan hanya Wisata, web tegalur ini memiliki konten yang ada didalamnya yaitu Berita, Pariwisata, Event, Penginapan, kuliner dan oleh-oleh, Web ini bermanfaat untuk mengetahui hal-hal menarik dan unik yang ada di kota maupun kabupaten tegal.
@@ -17,24 +34,6 @@ contoh penggunaannya masuk ke link kami lalu masuk ke berita jika ingin mengetah
 ## LINK WEBSITE
 http://tegalur-web.herokuapp.com/
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title> Belajar Tabel HTML</title>
-	<meta charset="utf-8">
-</head>
-<body>
- 
- <table>
- 	<tr>
- 		<td> Baris 1 Kolom 1</td>
- 		<td> Baris 1 Kolom 2</td>
- 	</tr>
- 	<tr>
- 		<td> Baris 2 Kolom 1</td>
- 		<td> Baris 2 Kolom 2</td>
- 	</tr>
- </table>
+## LINK API TEGALUR WEB
+https://github.com/yoihenken/Tegal-City_AP
 
-</body>
-</html>
