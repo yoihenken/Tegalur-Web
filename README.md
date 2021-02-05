@@ -9,11 +9,11 @@
 <body>
  
  <table border="1" cellpadding="5">
-        <tr>
+        <thead>
             <th>Bagus Bayu Sasongko         (18104003)</th>
             <th>Rodo Joshua Saragih         (18104021)</th>
             <th>Zulfiqar Ridho Fikriansyah  (18104050)</th>
-    </tr>
+    </thead>
     </table>
 
 </body>
