@@ -6,6 +6,7 @@ kelompok 9 :
 Bagus Bayu Sasongko         18104003
 Rodo Joshua Saragih         18104021
 Zulfiqar Ridho Fikriansyah  18104050
+
 ## Deskripsi TegaLur Web
 TegaLur Web merupakan web yang berfungsi untuk mengetahui Informasi Wisata yang ada ditegal bagi masyarakat tegal maupun para perantauan atau pendatang. Bukan hanya Wisata, web tegalur ini memiliki konten yang ada didalamnya yaitu Berita, Pariwisata, Event, Penginapan, kuliner dan oleh-oleh, Web ini bermanfaat untuk mengetahui hal-hal menarik dan unik yang ada di kota maupun kabupaten tegal.
 
