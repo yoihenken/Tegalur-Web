@@ -1,11 +1,10 @@
 <p align="center"><img src="https://cdn.discordapp.com/attachments/398390161928355842/806871299636592680/Logo.png" width="400"></p>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title> Kelompok 9 </title>
+    <meta charset="utf-8">
 </head>
 <body>
  
