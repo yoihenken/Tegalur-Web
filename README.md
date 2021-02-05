@@ -2,10 +2,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title> Kelompok 9 </title>
-    <meta charset="utf-8">
-</head>
+    
 <body>
  
  <table border="1" cellpadding="5">
