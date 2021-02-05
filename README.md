@@ -8,14 +8,13 @@
 </head>
 <body>
  
- <table>
- 	<tr>
- 		<td> Bagus Bayu Sasongko        (18104003)</td>
- 		<td> Rodo Joshua Saragih         (18104021)</td>
-        <td>  Zulfiqar Ridho Fikriansyah (18104050)</td>
- 	</tr>
- 
- </table>
+ <table border="1" cellpadding="5">
+        <tr>
+            <td>Bagus Bayu Sasongko         (18104003)</td>
+            <td>Rodo Joshua Saragih         (18104021)</td>
+            <td>Zulfiqar Ridho Fikriansyah  (18104050)</td>
+    </tr>
+    </table>
 
 </body>
 </html>
