@@ -30,6 +30,13 @@ class ViewsController extends Controller
         return view('listpageview', $data);
     }
 
+    public function newsDetail($page, $index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getNews($page, $index);
+        $data['type'] = "NEWS";
+        return view('detailpageview', $data);
+    }
+
     public function event(){
         $dashboard = new DashboardController();
         $data['list'] = $dashboard->getEventPage(1);
@@ -48,12 +55,17 @@ class ViewsController extends Controller
         return view('listpageview', $data);
     }
 
+    public function eventDetail($page, $index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getEvent($page, $index);
+        $data['type'] = "EVENT";
+        return view('detailpageview', $data);
+    }
+
     public function tourism(){
         $dashboard = new DashboardController();
         $data['list'] = $dashboard->getTourism();
         $data['type'] = "TOURISM";
-        // 
-        // $data['lastev'] = $dashboard->getEventLastPage();
         return view('listview', $data);
     }
 

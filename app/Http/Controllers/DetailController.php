@@ -70,6 +70,7 @@ class DetailController extends Controller
                 $response = $request->getBody()->getContents();
                 $data = json_decode($response,true);
                 $list = $data["object"];
+                
                 break;
             case "EVENT" : 
                 $request = $client->get($baseURL . "/event/detail/".$page."/".$index);

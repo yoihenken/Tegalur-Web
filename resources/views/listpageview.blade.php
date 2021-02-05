@@ -18,7 +18,7 @@
                     <hr class="divider my-4" />
 
                     @forelse ($list as $index=>$item)
-                        <a href="/{{strtolower($type)}}/{{$index}}/#contact">
+                        <a href="/{{strtolower($type)}}/{{$current}}/{{$index}}">
                             <img src="">
                             {{ $item['title'] }}
                         </a>

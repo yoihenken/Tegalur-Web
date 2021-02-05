@@ -75,7 +75,7 @@ class DashboardController extends Controller
 
     public function getSouvenir (){
         
-        $list = $this -> callApiList("SOUVENIR", false);
+        $list = $this -> callApiList("SOUVENIR", false); 
         if(sizeof($list)!= 0){
             return $list;
         }
