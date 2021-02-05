@@ -16,3 +16,25 @@ contoh penggunaannya masuk ke link kami lalu masuk ke berita jika ingin mengetah
 
 ## LINK WEBSITE
 http://tegalur-web.herokuapp.com/
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Tabel HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+ 
+ <table>
+ 	<tr>
+ 		<td> Baris 1 Kolom 1</td>
+ 		<td> Baris 1 Kolom 2</td>
+ 	</tr>
+ 	<tr>
+ 		<td> Baris 2 Kolom 1</td>
+ 		<td> Baris 2 Kolom 2</td>
+ 	</tr>
+ </table>
+
+</body>
+</html>
