@@ -36,3 +36,12 @@ Route::get('/souvenir/{index}', 'ViewsController@souvenirDetail');
 Route::get('/lodging/', 'ViewsController@lodging')->name('lodging');
 Route::get('/lodging/{index}', 'ViewsController@lodgingDetail');
 
+// News
+Route::get('/news/', 'ViewsController@news')->name('news');
+Route::get('/news/{index}', 'ViewsController@newsPage');
+Route::get('/news/{page}/{index}', 'ViewsController@newsDetail');
+
+// Event
+Route::get('/event/', 'ViewsController@event')->name('event');
+Route::get('/event/{index}', 'ViewsController@eventPage');
+Route::get('/event/{page}/{index}', 'ViewsController@eventDetail');

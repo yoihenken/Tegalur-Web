@@ -11,19 +11,48 @@ class DashboardController extends Controller
     public function getNewsPage ($index){
         
         $list = $this -> callApiList("NEWS", $index);
-        if(sizeof($list)!= 0){
+        if(sizeof($list)!= null){
             return $list;
         }
         return [];
     }
 
+    public function getNewsLastPage(){
+        $index = 50;
+        $isLooping = true;
+        do {
+            $list = $this -> callApiList("NEWS", $index);
+            if(sizeof($list) != null){
+                $isLooping = false;
+            }else{
+                $index++;
+            }
+        } while ($isLooping);
+        return $index;
+    }
+
     public function getEventPage ($index){
         
         $list = $this -> callApiList("EVENT", $index);
-        if(sizeof($list)!= 0){
+        if(sizeof($list)!= null){
             return $list;
         }
         return [];
+    }
+
+    public function getEventLastPage(){
+        $index = 7;
+        $isLooping = true;
+        do {
+            $list = $this -> callApiList("EVENT", $index);
+            if(sizeof($list) == null){
+                $isLooping = false;
+                $index--;
+            }else{
+                $index++;
+            }
+        } while ($isLooping);
+        return $index;
     }
 
     public function getTourism (){
@@ -46,7 +75,7 @@ class DashboardController extends Controller
 
     public function getSouvenir (){
         
-        $list = $this -> callApiList("SOUVENIR", false);
+        $list = $this -> callApiList("SOUVENIR", false); 
         if(sizeof($list)!= 0){
             return $list;
         }
@@ -77,6 +106,13 @@ class DashboardController extends Controller
                 $request = $client->get($baseURL . "/event/".$index);
                 $response = $request->getBody()->getContents();
                 $data = json_decode($response,true);
+                foreach($data as $key => $item){
+                    switch ($key) {
+                        case 'msg': 
+                            $data = ['list' => []];
+                            break;
+                    }
+                }
                 $list = $data["list"];
                 break;
             case "TOURISM" : 

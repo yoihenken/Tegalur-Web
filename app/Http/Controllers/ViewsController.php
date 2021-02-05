@@ -13,11 +13,53 @@ class ViewsController extends Controller
     }
 
     public function news(){
-        return view('news');
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getNewsPage(1);
+        $data['type'] = "NEWS";
+        $data['current'] = 1;
+        $data['last'] = $dashboard->getNewsLastPage();
+        return view('listpageview', $data);
+    }
+
+    public function newsPage($index){
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getNewsPage($index);
+        $data['type'] = "NEWS";
+        $data['current'] = $index;
+        $data['last'] = $dashboard->getNewsLastPage();
+        return view('listpageview', $data);
+    }
+
+    public function newsDetail($page, $index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getNews($page, $index);
+        $data['type'] = "NEWS";
+        return view('detailpageview', $data);
     }
 
     public function event(){
-        return view('event');
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getEventPage(1);
+        $data['type'] = "EVENT";
+        $data['current'] = 1;
+        $data['last'] = $dashboard->getEventLastPage();
+        return view('listpageview', $data);
+    }
+
+    public function eventPage($index){
+        $dashboard = new DashboardController();
+        $data['list'] = $dashboard->getEventPage($index);
+        $data['type'] = "EVENT";
+        $data['current'] = $index;
+        $data['last'] = $dashboard->getEventLastPage();
+        return view('listpageview', $data);
+    }
+
+    public function eventDetail($page, $index){
+        $detail = new DetailController();
+        $data['list'] = $detail->getEvent($page, $index);
+        $data['type'] = "EVENT";
+        return view('detailpageview', $data);
     }
 
     public function tourism(){

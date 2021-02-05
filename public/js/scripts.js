@@ -3,7 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
     */
-    (function($) {
+(function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -59,5 +59,6 @@
   //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
   //   }
   // });
+
 
 })(jQuery); // End of use strict
