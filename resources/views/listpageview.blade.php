@@ -36,7 +36,7 @@
                                         @endswitch
 
                                         <div class ="card-title mt-3 text-center"> 
-                                            <h5>{{ $item['title'] }}</h5>
+                                            <h6>{{ $item['title'] }}</h6>
                                         </div>
                                         <div class="card-subtitle text-muted">
                                             <p style="font-size: 10pt"> {{$item['date']}} </p>

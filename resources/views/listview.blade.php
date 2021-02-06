@@ -30,7 +30,7 @@
                                     <div class="card p-2" style="width: 18rem;">
                                         <img src="{{$item['image']}}">
                                         <div class ="card-title mt-3 text-center"> 
-                                            <h5>{{ $item['title'] }}</h5>
+                                            <h6>{{ $item['title'] }}</h6>
                                         </div>
                                     </div>
                                 </a>
