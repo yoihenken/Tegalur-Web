@@ -18,21 +18,27 @@
                         @case("LODGING")
                             <h2 class="mt-0">Penginapan</h2>    
                             @break
-                        @default
-                            
+                        @default    
                     @endswitch
-
                     <hr class="divider my-4" />
-
-                    @forelse ($list as $index=>$item)
-                        <a href="/{{strtolower($type)}}/{{$index}}">
-                            <img src="">
-                            {{ $item['title'] }}
-                        </a>
-                        <br>
-                    @empty
-                        <h4>Data not found</h4>
-                    @endforelse
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        @forelse ($list as $index=>$item)
+                            <div class="col m-3">
+                                <a href="/{{strtolower($type)}}/{{$index}}">
+                                    <div class="card p-2" style="width: 18rem;">
+                                        <img src="{{$item['image']}}">
+                                        <div class ="card-title mt-3 text-center"> 
+                                            <h5>{{ $item['title'] }}</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        @empty
+                            <h4>Data not found</h4>
+                        @endforelse
+                    </div>
                 </div>
             </div>
         </div>

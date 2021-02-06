@@ -5,6 +5,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
+                    {{-- Title --}}
                     @switch($type)
                         @case("NEWS")
                             <h2 class="mt-0">Berita</h2>
@@ -14,18 +15,39 @@
                             @break
                         @default
                     @endswitch
-
                     <hr class="divider my-4" />
+                </div>
+                <div class="col-lg-12">
+                    {{-- List Content --}}
+                    <div class="row">
+                        @forelse ($list as $index=>$item)
+                            <div class="col m-3">
+                                <a href="/{{strtolower($type)}}/{{$current}}/{{$index}}">
+                                    <div class="card p-2" style="width: 18rem;">
+                                        
+                                        @switch($type)
+                                            @case("NEWS")
+                                                <img src="{{$item['img']}}">
+                                                @break
+                                            @case("EVENT")
+                                                <img src="{{$item['image']}}">
+                                                @break
+                                            @default
+                                        @endswitch
 
-                    @forelse ($list as $index=>$item)
-                        <a href="/{{strtolower($type)}}/{{$current}}/{{$index}}">
-                            <img src="">
-                            {{ $item['title'] }}
-                        </a>
-                        <br>
-                    @empty
-                        <h4>Data not found</h4>
-                    @endforelse
+                                        <div class ="card-title mt-3 text-center"> 
+                                            <h5>{{ $item['title'] }}</h5>
+                                        </div>
+                                        <div class="card-subtitle text-muted">
+                                            <p style="font-size: 10pt"> {{$item['date']}} </p>
+                                        </div>
+                                    </div>   
+                                </a> 
+                            </div>                
+                        @empty
+                            <h4>Data not found</h4>
+                        @endforelse
+                    </div>
                 </div>
                 <div class="col-lg-8">
                     <nav aria-label="page navigation">
