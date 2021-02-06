@@ -26,7 +26,7 @@ menggunakan web tegalur sangat sederhana, pengguna tinggal masuk ke link yang su
 contoh penggunaannya masuk ke link kami lalu masuk ke berita jika ingin mengetahui berita tentang tegal, klik berita lalu muncul daftar berita di tegal lalu klik tulisan judul berita, lalu muncul beritanya
 
 ## LINK TEGALUR WEB
-http://tegalur-web.herokuapp.com/
+https://tegalur-web.herokuapp.com/
 
 ## LINK API TEGALUR WEB
 https://github.com/yoihenken/Tegal-City_API
