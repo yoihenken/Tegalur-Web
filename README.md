@@ -25,7 +25,7 @@ TegaLur Web merupakan web yang berfungsi untuk mengetahui Informasi Wisata yang 
 menggunakan web tegalur sangat sederhana, pengguna tinggal masuk ke link yang sudah tertera di bawah lalu tinggal cari apa yang dibutuhkan user di web kami lalu tinggal masuk ke salah satu fitur kami.
 contoh penggunaannya masuk ke link kami lalu masuk ke berita jika ingin mengetahui berita tentang tegal, klik berita lalu muncul daftar berita di tegal lalu klik tulisan judul berita, lalu muncul beritanya
 
-## LINK WEBSITE
+## LINK TEGALUR WEB
 http://tegalur-web.herokuapp.com/
 
 ## LINK API TEGALUR WEB
