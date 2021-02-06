@@ -29,5 +29,5 @@ contoh penggunaannya masuk ke link kami lalu masuk ke berita jika ingin mengetah
 http://tegalur-web.herokuapp.com/
 
 ## LINK API TEGALUR WEB
-https://github.com/yoihenken/Tegal-City_AP
+https://github.com/yoihenken/Tegal-City_API
 
