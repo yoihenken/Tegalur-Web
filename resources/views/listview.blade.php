@@ -27,7 +27,7 @@
                         @forelse ($list as $index=>$item)
                             <div class="col mb-3">
                                 <a href="/{{strtolower($type)}}/{{$index}}">
-                                    <div class="card pl-2 pr-2" style="width: 20rem;">
+                                    <div class="card p-2" style="width: 20rem;">
                                         <img src="{{$item['image']}}" width = 100%; height = 100%  style="object-fit: contain;">
                                         <div class ="card-title mt-3 text-center"> 
                                             <h6>{{ $item['title'] }}</h6>
