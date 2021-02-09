@@ -7,7 +7,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('news')}}">
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/berita.jpg') }}" alt="" />
+                        <img class="img-fluid" width = 100%; height = 100%  style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/berita.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Berita</div>
                         </div>
@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('tourism')}}" >
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/wisata.jpg') }}" alt="" />
+                        <img class="img-fluid" width = 100%; height = 100%  style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/wisata.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Pariwisata</div>
                         </div>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('event')}}">
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/event2.jpg') }}" alt="" />
+                        <img class="img-fluid" width = 100%; height = 100%  style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/event2.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Event</div>
                         </div>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('lodging')}}">
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/penginapan.jpg') }}" alt="" />
+                        <img class="img-fluid" width = 100%; height = 100%  style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/penginapan.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Penginapan</div>
                         </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('culinary')}}">
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/kuliner.jpg') }}" alt="" />
+                        <img class="img-fluid" width="100%" height="100%" style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/kuliner.jpg') }}" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Kuliner</div>
                         </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 text-center">
                     <a class="portfolio-box" href="{{route('souvenir')}}">
-                        <img class="img-fluid" width="100%" height="100%" src="{{ asset('assets/img/portfolio/thumbnails/ole2.jpg') }}" alt="" />
+                        <img class="img-fluid" width = 100%; height = 100%  style="object-fit: cover;" src="{{ asset('assets/img/portfolio/thumbnails/ole2.jpg') }}" alt="" />
                         <div class="portfolio-box-caption p-3">
                             <div class="project-name">Oleh Oleh</div>
                         </div>

@@ -21,16 +21,16 @@
                     {{-- List Content --}}
                     <div class="row">
                         @forelse ($list as $index=>$item)
-                            <div class="col m-3">
+                            <div class="col mb-3">
                                 <a href="/{{strtolower($type)}}/{{$current}}/{{$index}}">
-                                    <div class="card p-2" style="width: 18rem;">
+                                    <div class="card p-2" style="width: 20rem;">
                                         
                                         @switch($type)
                                             @case("NEWS")
-                                                <img src="{{$item['img']}}">
+                                                <img width = 100%; height = 100%  style="object-fit: contain;" src="{{$item['img']}}">
                                                 @break
                                             @case("EVENT")
-                                                <img src="{{$item['image']}}">
+                                                <img width = 100%; height = 100%  style="object-fit: contain;" src="{{$item['image']}}">
                                                 @break
                                             @default
                                         @endswitch
