@@ -31,3 +31,10 @@ https://tegalur-web.herokuapp.com/
 ## LINK API TEGALUR WEB
 https://github.com/yoihenken/Tegal-City_API
 
+## Laravel :
+- Guzzle = Get json to php
+
+## Node Js :
+- Cheerio = membaca struktur / elemen HTML
+
+- Axios = untuk request data melalui http
